@@ -1,0 +1,333 @@
+/* desktop and mobile version only */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+}
+
+body {
+    background-color: #000;
+}
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: seagreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 3s linear;
+}
+
+@keyframes loader {
+    from {
+        opacity: 0.5;
+        display: none;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.loader .load {
+    width: 5px;
+    height: 10px;
+    background-color: #000;
+    margin: -1px;
+    animation: load 3s ease-in-out infinite;
+}
+
+.loader p {
+    font-size: 10px;
+    color: #000;
+    font-weight: 900;
+    padding: 2px 8px;
+}
+
+@keyframes load {
+    10% {
+        height: 10px;
+        background-color: seagreen;
+    }
+    40% {
+        height: 11px;
+        opacity: 0.5;
+    }
+    60% {
+        height: 12px;
+        opacity: 0.7;
+    }
+    80% {
+        height: 15px;
+        opacity: 0.8;
+    }
+}
+
+.container {
+    width: 350px;
+    margin: 10rem auto;
+}
+
+.container .wrapper {
+    padding: 10px;
+}
+
+.container .wrapper h1 {
+    font-size: 17px;
+    text-align: center;
+    color: seagreen;
+    padding-bottom: 14px;
+}
+
+.container .wrapper .home {
+    display: none;
+}
+
+.container .wrapper .home h2 {
+    font-size: 15px;
+    letter-spacing: 0.7rem;
+    text-align: center;
+    color: seagreen;
+    padding-bottom: 10px;
+}
+
+.container .wrapper .home .grid-home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container .wrapper .home .grid-home button {
+    height: 24px;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    color: silver;
+    background-color: seagreen;
+    outline: none;
+}
+
+.container .wrapper .submit {
+    display: none;
+}
+
+.container .wrapper .submit h2 {
+    font-size: 15px;
+    text-align: center;
+    color: seagreen;
+    padding-bottom: 10px;
+}
+
+.container .wrapper .submit .grid-to {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container .wrapper .submit .grid-to button {
+    height: 24px;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    color: silver;
+    background-color: seagreen;
+    outline: none;
+}
+
+.container .wrapper section {
+    width: 340px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+marquee {
+    position: absolute;
+    top: 90%;
+    color: seagreen;
+}
+
+.container .wrapper section h2 {
+    font-size: 15px;
+    color: darksalmon;
+    padding: 5px;
+    line-height: 1.5rem;
+}
+
+.container .wrapper section ol li {
+    width: 340px;
+    margin-left: 1rem;
+    padding: 5px;
+}
+
+.container .wrapper section .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .wrapper section .grid button {
+    height: 24px;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    color: silver;
+    background-color: seagreen;
+    outline: none;
+}
+
+.container .wrapper .section1 {
+    display: none;
+}
+
+.container .wrapper .section2 {
+    display: none;
+}
+
+.container .wrapper .section3 {
+    display: none;
+}
+
+.container .wrapper .section4 {
+    display: none;
+}
+
+.container .wrapper .section5 {
+    display: none;
+}
+
+.container .wrapper .section6 {
+    display: none;
+}
+
+.container .wrapper .section7 {
+    display: none;
+}
+
+.container .wrapper .section8 {
+    display: none;
+}
+
+.container .wrapper .section9 {
+    display: none;
+}
+
+.container .wrapper .section10 {
+    display: none;
+}
+
+.correct {
+    background-color: royalblue;
+    box-shadow: 2px 2px 10px rgba(55, 10, 160, 0.5), -2px -2px 10px rgba(55, 10, 160, 0.5);
+    border-radius: 2px;
+    margin: 4px;
+}
+
+.wrong {
+    background-color: #f00;
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5), -2px -2px 10px rgba(255, 0, 0, 0.5);
+    border-radius: 2px;
+    margin: 4px;
+}
+
+.clear {
+    width: 340px;
+    margin-left: 1rem;
+    padding: 5px;
+}
+
+@media (min-width:1000px) {
+    .container {
+        width: 1000px;
+        margin: 10rem auto;
+    }
+    .container .wrapper {
+        padding: 20px;
+    }
+    .container .wrapper h1 {
+        font-size: 20px;
+        text-align: center;
+        color: seagreen;
+        padding-bottom: 15px;
+    }
+    .container .wrapper .home h2 {
+        font-size: 20px;
+        letter-spacing: 1rem;
+        text-align: center;
+        color: seagreen;
+        padding-bottom: 15px;
+    }
+    .container .wrapper .home .grid-home button {
+        height: 30px;
+        margin: 1rem;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        color: silver;
+        background-color: seagreen;
+        outline: none;
+        cursor: pointer;
+    }
+    .container .wrapper .submit h2 {
+        font-size: 20px;
+        text-align: center;
+        color: seagreen;
+        padding-bottom: 15px;
+    }
+    .container .wrapper .submit .grid-to button {
+        height: 30px;
+        margin: 1rem;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        color: silver;
+        background-color: seagreen;
+        outline: none;
+        cursor: pointer;
+    }
+    .container .wrapper section {
+        width: 600px;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .container .wrapper section h2 {
+        font-size: 18px;
+        color: darksalmon;
+        padding: 10px;
+    }
+    .container .wrapper section ol li {
+        width: 500px;
+        margin-left: 1rem;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .container .wrapper section .grid button {
+        height: 30px;
+        margin: 1rem;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        color: silver;
+        background-color: seagreen;
+        outline: none;
+        cursor: pointer;
+    }
+    .clear {
+        width: 500px;
+        margin-left: 1rem;
+        padding: 5px;
+    }
+}
